@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.game-info {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#guessInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+#guessInput:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#guessBtn {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+#guessBtn:hover {
+  background: #5568d3;
+}
+
+#guessBtn:active {
+  transform: scale(0.98);
+}
+
+.result-section {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 10px;
+  min-height: 30px;
+}
+
+#result.correct {
+  color: #28a745;
+  font-size: 24px;
+}
+
+#result.incorrect {
+  color: #dc3545;
+}
+
+#tries {
+  color: #666;
+  font-size: 16px;
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.reset-btn:hover {
+  background: #218838;
+}
+
+.record-section {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+#record {
+  color: #764ba2;
+  font-weight: bold;
+}

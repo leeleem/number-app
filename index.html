@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="数当てゲーム">
+  <meta name="theme-color" content="#667eea">
+  <title>数当てゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>数当てゲーム</h1>
+    
+    <div class="game-info">
+      <p>0～99の数字を当ててね</p>
+    </div>
+
+    <div class="input-section">
+      <input 
+        type="number" 
+        id="guessInput" 
+        min="0" 
+        max="99" 
+        placeholder="数字を入力"
+      >
+      <button id="guessBtn">判定</button>
+    </div>
+
+    <div class="result-section">
+      <p id="result" class="result">結果がここに表示されます</p>
+      <p id="tries">試行回数: 0 回</p>
+    </div>
+
+    <button id="resetBtn" class="reset-btn">新しいゲーム</button>
+
+    <div class="record-section">
+      <p id="record">最高記録: なし</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
